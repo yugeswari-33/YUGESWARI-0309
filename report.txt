@@ -1,0 +1,36 @@
+K-Means Project Report
+======================
+Dataset: 500 samples, K=4, std=1.5
+
+Scratch K-Means (kmeans++)
+ - Converged: True
+ - Iterations: 4
+ - Final inertia: 4293.004556
+ - Centroids:
+[[ 5.92515642  1.61337182]
+ [-7.06163376 -6.91663151]
+ [ 3.46192297  2.27449246]
+ [-5.65239408  8.33494934]]
+
+Scratch K-Means (random init)
+ - Converged: True
+ - Iterations: 7
+ - Final inertia: 2126.039402
+ - Centroids:
+[[ 4.76279743  1.89919856]
+ [-7.06163376 -6.91663151]
+ [-8.64343131  7.55417397]
+ [-2.65633217  9.08649366]]
+
+Scikit-learn KMeans
+ - Final inertia: 2126.039402
+ - Centroids:
+[[ 4.76279743  1.89919856]
+ [-8.64343131  7.55417397]
+ [-7.06163376 -6.91663151]
+ [-2.65633217  9.08649366]]
+
+Interpretation notes:
+- Compare the final inertia numbers: lower inertia indicates closer-fitting clusters (but not always 'better' semantically).
+- Differences between scratch and sklearn can come from initialization differences and how empty clusters are handled.
+- Centroids represent cluster centers (mean of assigned points). You can interpret clusters by looking at centroid coordinates and nearby points.

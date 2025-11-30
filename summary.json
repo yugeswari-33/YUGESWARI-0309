@@ -1,0 +1,12 @@
+{
+  "kpp": {
+    "n_iter": 4,
+    "final_inertia": 4293.004556228741,
+    "converged": true
+  },
+  "random": {
+    "n_iter": 7,
+    "final_inertia": 2126.0394018716693,
+    "converged": true
+  }
+}
